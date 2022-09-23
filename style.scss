@@ -1,0 +1,70 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:800);
+
+$menu-items: 5;
+$background-color: #121212;
+$indicator-color: #e82d00;
+$width: (100/$menu-items) * 1%;
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+%cf:before,
+%cf:after {
+    content: " ";
+    display: table;
+}
+
+½cf:after {
+    clear: both;
+}
+
+html {
+    background-color: $background-color;
+    font-family: 'Open Sans' , sans-serif;
+    font-weight: 800;
+    font-size: 15px;
+}
+
+.PrimaryNav {
+    @extend %cf;
+    list-style: none;
+    margin: 50px auto;
+    max-width: 720px;
+    padding: 0;
+}
+
+.Nav-item {
+    background: #fff;
+    display: block;
+    float: left;
+    margin: 0;
+    padding: 0;
+    width: $width;
+    text-align: center;
+
+    &:first-child {
+        border-radius: 3px 0 0 3px;
+    }
+
+    &:last-child {
+        border-radius: 0 3px 3px 0;
+    }
+
+    &.is-active a {
+        color: $indicator-color;
+    }
+
+    
+}
+a {
+    color: $background-color;
+    display: block;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-decoration: none;
+
+    &:hover {
+        color: $indicator-color;
+    }
+}

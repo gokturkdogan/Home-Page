@@ -1,0 +1,59 @@
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:800);
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+.PrimaryNav:before,
+.PrimaryNav:after {
+  content: " ";
+  display: table;
+}
+
+½cf:after {
+  clear: both;
+}
+
+html {
+  background-color: #121212;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 800;
+  font-size: 15px;
+}
+
+.PrimaryNav {
+  list-style: none;
+  margin: 50px auto;
+  max-width: 720px;
+  padding: 0;
+}
+
+.Nav-item {
+  background: #fff;
+  display: block;
+  float: left;
+  margin: 0;
+  padding: 0;
+  width: 20%;
+  text-align: center;
+}
+.Nav-item:first-child {
+  border-radius: 3px 0 0 3px;
+}
+.Nav-item:last-child {
+  border-radius: 0 3px 3px 0;
+}
+.Nav-item.is-active a {
+  color: #e82d00;
+}
+
+a {
+  color: #121212;
+  display: block;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-decoration: none;
+}
+a:hover {
+  color: #e82d00;
+}/*# sourceMappingURL=style.css.map */
