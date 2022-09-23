@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:800);
 *, *:before, *:after {
   box-sizing: border-box;
@@ -10,7 +9,7 @@
   display: table;
 }
 
-½cf:after {
+.PrimaryNav:after {
   clear: both;
 }
 
